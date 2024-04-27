@@ -20,11 +20,15 @@ poetry run python --version
 
 poetry add --group dev black
 poetry add --group dev ruff@0.1.9
+
+poetry add ibis-framework@7.2.0 --extras "duckdb,pandas"
+poetry add pandas@1.5.3
+poetry add polars@0.19.19
+poetry add pyarrow@14.0.2
+
 poetry add wheel
 poetry add psycopg2
 poetry add ipykernel
 poetry add openpyxl
-poetry add pandas
-poetry add sqlalchemy
 
 poetry install
